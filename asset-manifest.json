@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Bookworms/static/css/main.11230b27.css",
+    "main.js": "/Bookworms/static/js/main.e945080e.js",
+    "static/js/787.f3bfd9c9.chunk.js": "/Bookworms/static/js/787.f3bfd9c9.chunk.js",
+    "static/media/BulkyBook-gx4np.otf": "/Bookworms/static/media/BulkyBook-gx4np.fcfc73da05f4e7c1ad8e.otf",
+    "static/media/bootstrap-icons.woff?": "/Bookworms/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
+    "static/media/bootstrap-icons.woff2?": "/Bookworms/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
+    "static/media/Sprinkle-bg.svg": "/Bookworms/static/media/Sprinkle-bg.b0641916ae0f49bb222b.svg",
+    "static/media/default avatar.svg": "/Bookworms/static/media/default avatar.1ea754d160d885f0fe55.svg",
+    "static/media/moon.svg": "/Bookworms/static/media/moon.06c3c7335ffcc488a3d4.svg",
+    "static/media/sun.svg": "/Bookworms/static/media/sun.fc115c58331d1d5189fc.svg",
+    "static/media/close.svg": "/Bookworms/static/media/close.48938d9079be41f31813.svg",
+    "static/media/key-svgrepo-com.svg": "/Bookworms/static/media/key-svgrepo-com.1eb78716ce960a3d4497.svg",
+    "static/media/booksearch.svg": "/Bookworms/static/media/booksearch.aa1eadcd7d0ecd54a498.svg",
+    "static/media/account-svgrepo-com.svg": "/Bookworms/static/media/account-svgrepo-com.aaa8e6b3095a34edf14a.svg",
+    "static/media/eye-closed-svgrepo-com.svg": "/Bookworms/static/media/eye-closed-svgrepo-com.2045408f891c9a7c6260.svg",
+    "static/media/profile.svg": "/Bookworms/static/media/profile.f91a58b17bceddebc07e.svg",
+    "static/media/eye-svgrepo-com.svg": "/Bookworms/static/media/eye-svgrepo-com.a65bb97ff2752f4eed63.svg",
+    "index.html": "/Bookworms/index.html",
+    "main.11230b27.css.map": "/Bookworms/static/css/main.11230b27.css.map",
+    "main.e945080e.js.map": "/Bookworms/static/js/main.e945080e.js.map",
+    "787.f3bfd9c9.chunk.js.map": "/Bookworms/static/js/787.f3bfd9c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11230b27.css",
+    "static/js/main.e945080e.js"
+  ]
+}
