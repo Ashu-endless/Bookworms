@@ -1,0 +1,14 @@
+div#root {
+  background: #13132b;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  box-sizing: border-box;
+  background: url(./images/Sprinkle-bg.svg);
+}
+
+.medboldp{
+  font-size: medium;
+  font-weight: bold;
+}
+

@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  box-sizing: border-box;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d1950;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(178,121,216,.959);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+
+@font-face {
+  font-family: bulkybook;
+  src: url(./resource/BulkyBook-gx4np.otf);
+}
+
+input{
+  font-size: inherit;
+}

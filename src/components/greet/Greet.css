@@ -1,0 +1,44 @@
+#Greet-Div {
+    position: relative;
+    height: 20vh;
+    width: 96%;
+    padding: 3%;
+    margin: 2% 2%;
+    border-radius: 5px;
+    background-color: #191e46;
+}
+#moon-svg {
+    background: url(./images/moon.svg);
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 50%;
+    height: 75%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#sun-svg {
+    background: url(./images/sun.svg);
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 50%;
+    height: 75%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.Apple {
+    color: #9090d7;
+    font-size: x-large;
+    font-weight: 600;
+    display: block;
+}
+
+.grapes {
+    color: #deb887;
+    flex-grow: 3;
+    font-size: xx-large;
+    font-weight: 900;
+    max-width: 65vw;
+}

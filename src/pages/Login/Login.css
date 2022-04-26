@@ -1,0 +1,121 @@
+#Login-form {
+    display: flex;
+    flex-flow: column;
+    width: 50vw;
+    min-width: 280px;
+    max-width: 400px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 2vh;
+    border: 1px white solid;
+    padding: 1vh 2vw;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#Login-form::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #909;
+    font-weight: lighter;
+}
+
+/* #Login-Page{
+    height: 100vh;
+    width: 100vw;
+    background: url(.);
+} */
+[icon=username]{
+    background: url(../../images/account-svgrepo-com.svg);
+}
+[icon=password]{
+    background: url(../../images/key-svgrepo-com.svg);
+}
+[icon=password-show]{
+    background: url(../../images/eye-svgrepo-com.svg);
+}
+[icon=password-hide]{
+    background: url(../../images/eye-closed-svgrepo-com.svg);
+}
+[icon=close-cross]{
+    background: url(../../images/close.svg);
+}
+[icon=default-account]{
+    background: url(../../images/default\ avatar.svg);
+}
+
+
+
+
+[icon] {
+    flex-grow: 1;
+    aspect-ratio: 1/1;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+#Login-btn{
+    font-size: large;
+    background: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    border: 2px #176ec9 solid;
+}
+
+
+#Login-app-title {
+    font-size: xxx-large;
+    font-family: bulkybook;
+    color: cadetblue;
+    color: #3f51b5;
+
+}
+
+.auth-inpdiv {
+    display: grid;
+    /* font-size: large; */
+    /* flex-grow: 4; */
+    grid-auto-flow: column;
+    /* width: 50vw; */
+    width: 100%;
+    /* position: relative; */
+    grid-template-columns: 10% 85%;
+    gap: 5%;
+}
+
+input.auth-input {
+    flex-grow: 4;
+    border-radius: 5px;
+    border: none;
+    padding: 0 1vw;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    color: chocolate;
+}
+
+#Login-signupbtn {
+    text-decoration: none;
+    font-size: large;
+    padding: 0vh 2vw;
+    border: 1px cornflowerblue solid;
+    border-radius: 30px;
+    display: inline-block;
+    color: white;
+    color: cadetblue;
+    background: #15385c;
+    font-weight: bold;
+}
+
+.medfont{
+    font-size: medium;
+}
