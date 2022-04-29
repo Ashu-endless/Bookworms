@@ -1,0 +1,19 @@
+#un-avail-info {
+    color: lightgreen;
+    text-align: left;
+    font-weight: bold;
+    display: none;
+    /* height: 0; */
+    /* display: none; */
+}
+
+.auth-info{
+    grid-area: info;
+    text-align: left;
+    font-weight: bold;
+    /* display: none; */
+}
+
+[icon=fullname]{
+    background: url(../resources/default\ avatar.svg)
+}

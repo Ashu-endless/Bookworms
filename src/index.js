@@ -8,7 +8,8 @@ import App from './App';
 // import Login from './components/Login/Login';
 import reportWebVitals from './reportWebVitals';
 // import PrivateRoute from "./utils/PrivateRoute";
-
+// export const api_url = "http://127.0.0.1:8000/"
+export const api_url = "https://app-bookworms.herokuapp.com/"
 
 
 ReactDOM.render(

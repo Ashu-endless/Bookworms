@@ -47,3 +47,11 @@
 
 .red_brder{border: 2px red solid;
 color: red;}
+
+
+[icon=close-cross]{
+    background: url(./close.svg)
+}
+[icon=default-account]{
+    background: url(./default\ avatar.svg);
+}

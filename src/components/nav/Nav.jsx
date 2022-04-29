@@ -11,7 +11,7 @@ function Nav() {
     let {logoutUser} = useContext(AuthContext)
     return (
         <nav>
-            <p id='bookworms-title' >BookWarms</p>
+            <p className='bookworms-title' >BookWarms</p>
             <div id='Navbar-rightside' >
                 <SearchBar/>
                 {/* <Tooltip html={<ProfileMore logout={logoutUser} />} interactive="true" position="bottom" trigger='click' > <div id='profile-svg' ></div> </Tooltip> */}
