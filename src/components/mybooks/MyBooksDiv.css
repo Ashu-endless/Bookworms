@@ -1,0 +1,20 @@
+#MyBooksDiv{
+    display: block;
+    border: 1px white dashed;
+    width: 96%;
+    margin: 2%;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#MyBooksDiv-head {
+    font-weight: bold;
+    padding: 1vh 2vw;
+    background: cadetblue;
+    position: relative;
+    margin: 0;
+}
+
+#MyBooksDiv-body {
+    height: 20vh;
+}

@@ -1,14 +1,13 @@
-import React, {useContext} from 'react'
+import React, {useEffect} from 'react'
 import './SignUp.css'; 
-import AuthContext from '../../context/AuthContext'
 import { api_url } from '../..'
+import { togglepwvisibility } from '../Login/Login';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 function SignUp() {
-  let {authTokens} = useContext(AuthContext)
 
 
-function mkpwvisible(){
 
-}
 
 // const AuthAlert = {
 //   hide : function(){
@@ -18,18 +17,26 @@ function mkpwvisible(){
 
 const SignUpUser= async (e )=> {
     e.preventDefault()
-    let response = await fetch(`${api_url}`, {
+    let response = await fetch(`${api_url}api/SignUp/`, {
         method:'POST',
         headers:{ 
             'Content-Type':'application/json',
-            'Authorization':'Bearer ' + String(authTokens.access)
+            // 'Authorization':'Bearer ' + String(authTokens.access)
         },
-        body:JSON.stringify({'username':"e.target.username.value", 'password':"e.target.password.value"})
+        body:JSON.stringify({'username':e.target.username.value, 'password':e.target.password.value,'name':e.target.fullname.value})
     })
     let data = await response.json()
-    console.log(data)
-    if(response.status === 200){
-        // history('/')
+    // console.log(data.response)
+    // console.log(response.response)
+    if(data.success === 'true'){
+      const MySwal = withReactContent(Swal)
+
+      await MySwal.fire({
+          title: <strong>Account Created Succesfully</strong>,
+          html: <i>Click Login Button to Login</i>,
+          icon: 'success',
+          confirmButtonText: <a className='boldwhitep' href='#/Login' > Login </a>
+        })
     }else{
         alert('Something went wrong!')
     }
@@ -57,8 +64,8 @@ const UNAvailibility= async (e)=> {
         body:JSON.stringify({username:e.target.value})
     })
     let data = await response.json()
-    console.log(data)
-    console.log(data.available)
+    // console.log(data)
+    // console.log(data.available)
 
     if(data.available === 'true'){
       info.style.display = "block"
@@ -76,9 +83,14 @@ const UNAvailibility= async (e)=> {
   }
 
 
+  // const verifySignUp=(e)=>{
+  //   e.preventDefault()
+  //   if
+  // }
 
-
-
+  useEffect(() => {
+    document.querySelector("#Loading-stop-btn-home").click()
+  });
 
 
     return (
@@ -104,7 +116,7 @@ const UNAvailibility= async (e)=> {
         <div className='auth-inpdiv' >
         <span icon="password"  ></span> 
         <input className='auth-input' type="password" name="password" placeholder="Create Password" />
-          <span icon="password-show" onClick={mkpwvisible} ></span>
+          <span icon="password-hide" onClick={togglepwvisibility} ></span>
 
         </div>
 
@@ -112,7 +124,7 @@ const UNAvailibility= async (e)=> {
 
 
           <button type='submit' id='Login-btn' >Create Account</button>
-          <div className='medfont' >Aready have an account <a id='Login-signupbtn'  href="/#/Login">Login</a> </div>
+          <div className='medfont' >Aready have an account <a id='Login-signupbtn'  href="#/Login">Login</a> </div>
       </form>
   </div>
   )

@@ -14,7 +14,7 @@
     grid-auto-rows: max-content;
     /* flex-flow: column; */
     text-align: center;
-    gap: 3vh;
+    gap: 1vh;
     justify-items: center;
     padding: 1vh;
     padding-top: 5vh;

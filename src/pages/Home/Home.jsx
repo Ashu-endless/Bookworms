@@ -1,4 +1,5 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useEffect} from 'react'
+// import React from 'react'
 import './Home.css'; 
 // import { Route, Routes } from "react-router-dom";
 // import AuthContext from '../../context/AuthContext'
@@ -6,7 +7,11 @@ import Greet from '../../components/greet/Greet';
 import Nav from '../../components/nav/Nav';
 import SideBar from '../../components/sideBar/SideBar';
 import { Route, Routes } from "react-router-dom";
-
+import MyBooksDiv from '../../components/mybooks/MyBooksDiv';
+// import useEffect  from 'react';
+import AddBook from '../../components/addbook/AddBook';
+import SearchResDiv from './searchresultdiv/SearchResDiv';
+import Profile from './profile/Profile';
 function Home() {
   // let [notes, setNotes] = useState([])
   
@@ -35,6 +40,10 @@ function Home() {
     //     }
         
     // }
+
+    useEffect(() => {
+      document.querySelector("#Loading-stop-btn-home").click()
+    });
  
   return (
           <>
@@ -42,9 +51,13 @@ function Home() {
           <Routes>
           
           <Route path="/dashboard"  element={<SideBar/>} ></Route>
+          <Route path="/addbook"  element={<AddBook/>} ></Route>
+          <Route path="/profile"  element={<Profile/>} ></Route>
+          <Route path="/search"  element={<SearchResDiv/>} ></Route>
 
           </Routes>
           <Greet/>
+          <MyBooksDiv/>
           </>
         )
 }

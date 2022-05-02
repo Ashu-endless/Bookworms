@@ -1,0 +1,10 @@
+#SearchRes-div{
+    position: absolute;
+    top: 5rem;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    background: #2331a3;
+    height: 75vh;
+    z-index: 1;
+    border-radius: 5px;
+}

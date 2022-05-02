@@ -11,7 +11,7 @@
     grid-area: info;
     text-align: left;
     font-weight: bold;
-    /* display: none; */
+    display: none;
 }
 
 [icon=fullname]{

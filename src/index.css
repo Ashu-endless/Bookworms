@@ -36,3 +36,6 @@ code {
 input{
   font-size: inherit;
 }
+[hide]{
+  display: none;
+}
