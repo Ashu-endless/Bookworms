@@ -10,8 +10,11 @@ import { Route, Routes } from "react-router-dom";
 import MyBooksDiv from '../../components/mybooks/MyBooksDiv';
 // import useEffect  from 'react';
 import AddBook from '../../components/addbook/AddBook';
-import SearchResDiv from './searchresultdiv/SearchResDiv';
-import Profile from './profile/Profile';
+import Profile from '../../components/profile/Profile';
+import SearchResDiv from '../../components/searchresultdiv/SearchResDiv';
+import ViewBook from '../../components/viewbook/ViewBook';
+import MyBookWishList from '../../components/mybooks/MyBookWishList';
+import MyCurrentReads from '../../components/mybooks/MyCurrentReads';
 function Home() {
   // let [notes, setNotes] = useState([])
   
@@ -54,10 +57,15 @@ function Home() {
           <Route path="/addbook"  element={<AddBook/>} ></Route>
           <Route path="/profile"  element={<Profile/>} ></Route>
           <Route path="/search"  element={<SearchResDiv/>} ></Route>
+          <Route path="/book/:slug"  element={<ViewBook/>} ></Route>
 
           </Routes>
           <Greet/>
+          <MyCurrentReads/>
+
           <MyBooksDiv/>
+          <MyBookWishList/>
+          {/* <MyBooksDiv/> */}
           </>
         )
 }

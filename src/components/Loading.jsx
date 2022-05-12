@@ -20,7 +20,7 @@ function Loading(props) {
     return (
             <>
             {/* <div >  */}
-            <SpinnerInfinity enabled={loading} style={LoadingDivStyle} thickness={180} speed={100} color="rgba(82, 57, 172, 1)" secondaryColor="rgba(0, 0, 0, 0.91)" />
+            <SpinnerInfinity enabled={loading} style={LoadingDivStyle} thickness={180} speed={100} color="black" secondaryColor="rgb(20 20 82)" />
             <button id={props.id} hide="" onClick={unload} ></button>
             
             {/* </div> */}

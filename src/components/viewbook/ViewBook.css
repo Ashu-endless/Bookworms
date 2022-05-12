@@ -1,0 +1,33 @@
+#ViewBook-div {
+    display: grid;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    /* margin: 0 5% 0 5%; */
+    background: #080838;
+    min-height: calc(100vh - 4rem);
+    z-index: 1;
+    border-radius: 5px;
+    padding-top: 1rem;
+}
+
+#DeleteBook-btn{
+        font-size: medium;
+        background: #df1a47;
+        border: none;
+        border-radius: 0.4rem;
+        color: white;
+        /* bottom: 1vh; */
+        width: 96%;
+        margin: 2%;
+        text-align: center;
+        /* font-weight: bold; */
+        /* padding: 1vh 1vw; */
+        cursor: pointer;
+        border: 2px #13132b solid;
+        /* grid-area: btn; */
+        /* height: 5vh; */
+        max-height: 50px;
+        font-family: monospace;
+        font-size: large;
+}

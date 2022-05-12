@@ -1,12 +1,115 @@
-#Addbook-div{
-    position: absolute;
-    top: 5rem;
-    width: 90%;
-    margin: 0 5% 0 5%;
-    background: #0e0e16;
-    height: 75vh;
-    z-index: 1;
-    border-radius: 5px;
+#Addbook-div {
+  position: absolute;
+  top: 5rem;
+  width: 90%;
+  /* margin: 0 5% 0 5%; */
+  background: #0e0e16;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+  display: grid;
+  border-radius: 5px;
+  padding: 2vh 2vw;
+  grid-template-areas: ". ."
+  "btn btn";
+  gap: 2vw;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  max-height: 80vh;
+  overflow: auto;
+  /* min-height: 350px; */
 }
 
-    
+#AB-inp-fields {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: baseline;
+  gap: 1vh;
+  /* grid-template-rows: 1fr 1fr 2fr 1fr 1fr; */
+  font-size: large;
+  /* max-height: 350px; */
+  width: 100%;
+  overflow: auto;
+  padding-right: 2px;
+  max-height: 80vh;
+  overflow: auto;
+  /* padding-top: 2vh; */
+  /* padding-right: 1vw; */
+}
+
+#AB-cover-fields {
+  display: grid;
+  justify-content: center;
+  padding-top: 2vh;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  gap: 1vh;
+  align-content: baseline;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+[addbookinp] {
+  border: none;
+  border-radius: 2px;
+  color: #424e87;
+  display: block;
+  height: -moz-fit-content;
+  /* height: fit-content; */
+  width: 100%;
+}
+
+#AB-book-cover-preview {
+  /* width: 25vw; */
+  aspect-ratio: 1/2;
+  /* width: 40%; */
+  position: relative;
+  background: blueviolet;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/216/149/large_2x/vector-simple-and-effective-motivational-book-cover-design-template.jpg);
+  background-size: cover;
+  background-repeat: round;
+  /* max-height: 50%; */
+  max-height: 30vh;
+  transform: translateX(33%);
+}
+
+#AddBook-btn {
+    font-size: large;
+    background: cornflowerblue;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    bottom: 1vh;
+    width: 96%;
+    margin: 2%;
+    text-align: center;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    border: 2px #080838 solid;
+    grid-area: btn;
+    /* height: 5vh; */
+    max-height: 50px;
+    font-family: monospace;
+}
+
+.inp-text {
+  height: fit-content;
+  font-weight: bold;
+  color: cadetblue;
+  font-size: medium;
+}
+
+#load-img-btn {
+  background: cornflowerblue;
+  text-align: center;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: small;
+  padding: 2px;
+  display: grid;
+  align-items: center;
+  height: fit-content;
+}

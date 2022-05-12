@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 *{
   box-sizing: border-box;
@@ -38,4 +39,50 @@ input{
 }
 [hide]{
   display: none;
+}
+
+
+textarea {
+  width: 200px;
+  height: 15px;
+  padding: 5px;
+  min-height: 30px;
+  line-height: 15px;
+  /* min-width: 200px; */
+  max-width: 300px;
+  transition: width 0.25s;
+  resize: none;
+  overflow: hidden;
+}
+
+.tune {
+  position: relative;
+  max-width: 300px !important;
+  width: 20vw !important;
+  min-width: 179px !important;
+  /* max-height: 300px; */
+  min-height: 200px !important;
+  height: 100% !important;
+  display: flex;
+  flex-flow: column;
+  background-color: #ecf0f1;
+  border-radius: 0.25rem;
+  margin: 0 !important;
+  user-select: none;
+  transition: 0.25s;
+}
+
+[icon=add-book]{
+  background: url(./images/addbook.svg);
+}
+
+.cwmdbold{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+a{
+  text-decoration: none;
 }

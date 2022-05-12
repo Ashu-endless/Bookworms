@@ -4,7 +4,9 @@ div#root {
   width: 100vw;
   color: white;
   box-sizing: border-box;
-  background: url(./images/Sprinkle-bg.svg);
+  overflow: auto;
+  padding-top: 4rem;
+  /* background: url(./images/Sprinkle-bg.svg); */
 }
 
 .medboldp{
@@ -23,4 +25,16 @@ div#root {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+#t2 {
+  background: url(https://images-na.ssl-images-amazon.com/images/I/71wsKcSKsuL.jpg);
+  background-size: cover;
+  background-repeat: round;
+}
+#t1 {
+  /* height: 80%; */
+  background: url(https://inventwithpython.com/images/cover_bigbookpython_thumb.jpg);
+  background-size: cover;
+  background-repeat: round;
 }

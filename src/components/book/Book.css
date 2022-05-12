@@ -1,0 +1,79 @@
+.Book-cover-page-url {
+    height: 100%;
+    width: calc(100% - 5px);
+    background-size: contain;
+    background-repeat: round;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+
+.Book-front {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: calc(100% - 30px) 25px;
+    gap: 2%;
+}
+
+.src-FlippingCard-styles-module__flipping-card-container--3hXUC {
+    border: 2px solid #9c27b0;
+}
+
+
+.Book-back {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 90% 6%;
+    height: 100%;
+    gap: 2%;
+    padding: 2px;
+}
+
+.Book-info-div {
+    height: 100%;
+    background: rgb(14, 55, 116);
+    overflow: auto;
+    padding: 2px;
+}
+
+.edit-book {
+    height: 100%;
+    font-size: small;
+    padding: 1px;
+    background: #9a9aef;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ss {
+    border: 1px #13132b solid;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    border-radius: 2px;
+    margin: 4px 2px;
+    font-weight: bold;
+}
+
+span.ss-add,.ss-minus {
+    font-weight: bolder;
+    background: #13132b;
+}
+
+span.ss-btn{
+    display: none;
+    background: limegreen;
+    cursor: pointer;
+}
+
+.ss-minus:hover {
+    background: #141452;
+}
+span.ss-add:hover {
+    background: #141452;
+}

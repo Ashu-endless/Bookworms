@@ -6,6 +6,8 @@
     margin: 2% 2%;
     border-radius: 5px;
     background-color: #191e46;
+    background: url(../../images/Sprinkle-bg.svg);
+    filter: drop-shadow(5px 5px 2px black) drop-shadow(-2px -2px 2px black);
 }
 #moon-svg {
     background: url(./images/moon.svg);

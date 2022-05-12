@@ -1,20 +1,101 @@
-#MyBooksDiv{
+#MyBooksDiv {
     display: block;
-    border: 1px white dashed;
+    border: 3px #3f51b5 dashed;
     width: 96%;
     margin: 2%;
     padding: 0px;
     border-radius: 5px;
+    box-shadow: 5px 5px 2px black;
 }
+
+/* !Imp!! */
+
+
+
+/* #MyBooksDiv {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px black;
+    height: calc(100vh - 4rem);
+    position: fixed;
+    top: 4rem;
+    z-index: 1;
+    background-color: #2d1950;
+} */
 
 #MyBooksDiv-head {
     font-weight: bold;
     padding: 1vh 2vw;
-    background: cadetblue;
+    background: #141452;
     position: relative;
     margin: 0;
 }
 
 #MyBooksDiv-body {
-    height: 20vh;
+    height: 50vh;
+    padding: 1vh 1vw;
+    gap: 1vw;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    justify-content: start;
+    overflow-y: hidden;
 }
+
+/* Book.css */
+.bd {
+    height: 100%;
+    border: 2px #9c27b0 solid;
+    /* width: 100%; */
+    padding: 2px;
+    border-radius: 2px;
+    align-items: center;
+    max-width: 200px;
+    min-width: 150px;
+    display: grid;
+    grid-auto-rows: 75% 15% 10%;
+}
+
+p.pp {
+    text-overflow: clip;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    /* overflow: hidden; */
+    color: aqua;
+    word-break: break-word;
+    font-weight: bold;
+    /* overflow-wrap: anywhere; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    text-align: center;
+    /* display: grid; */
+    align-items: center;
+}
+
+.imgg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.bd:hover {
+    border: 2px #5f9ea0 solid;
+    background: #181820;
+}
+
+@media only screen and (max-width: 400px) {
+    #MyBooksDiv-body {
+        gap: 3vw;
+        
+    }
+    #MyBooksDiv-body::-webkit-scrollbar {
+        height: 4px;
+        width: 4px;
+      }
+  }
