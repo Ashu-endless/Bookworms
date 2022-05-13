@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Bookworms/static/css/main.7ba4dc02.css",
-    "main.js": "/Bookworms/static/js/main.649dd0d9.js",
+    "main.css": "/Bookworms/static/css/main.ba10ec32.css",
+    "main.js": "/Bookworms/static/js/main.61b515ac.js",
     "static/js/787.f3bfd9c9.chunk.js": "/Bookworms/static/js/787.f3bfd9c9.chunk.js",
     "static/media/BulkyBook-gx4np.otf": "/Bookworms/static/media/BulkyBook-gx4np.fcfc73da05f4e7c1ad8e.otf",
     "static/media/bootstrap-icons.woff?": "/Bookworms/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
@@ -19,12 +19,12 @@
     "static/media/eye-svgrepo-com.svg": "/Bookworms/static/media/eye-svgrepo-com.a65bb97ff2752f4eed63.svg",
     "static/media/addbook.svg": "/Bookworms/static/media/addbook.a737adbe0580005e17b5.svg",
     "index.html": "/Bookworms/index.html",
-    "main.7ba4dc02.css.map": "/Bookworms/static/css/main.7ba4dc02.css.map",
-    "main.649dd0d9.js.map": "/Bookworms/static/js/main.649dd0d9.js.map",
+    "main.ba10ec32.css.map": "/Bookworms/static/css/main.ba10ec32.css.map",
+    "main.61b515ac.js.map": "/Bookworms/static/js/main.61b515ac.js.map",
     "787.f3bfd9c9.chunk.js.map": "/Bookworms/static/js/787.f3bfd9c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ba4dc02.css",
-    "static/js/main.649dd0d9.js"
+    "static/css/main.ba10ec32.css",
+    "static/js/main.61b515ac.js"
   ]
 }
