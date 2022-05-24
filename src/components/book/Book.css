@@ -1,7 +1,7 @@
 .Book-cover-page-url {
     height: 100%;
     width: calc(100% - 5px);
-    background-size: contain;
+    background-size: cover;
     background-repeat: round;
     border-radius: 3px;
     margin: 2px;
@@ -17,9 +17,9 @@
     gap: 2%;
 }
 
-.src-FlippingCard-styles-module__flipping-card-container--3hXUC {
+/* .src-FlippingCard-styles-module__flipping-card-container--3hXUC {
     border: 2px solid #9c27b0;
-}
+} */
 
 
 .Book-back {
@@ -32,10 +32,14 @@
 }
 
 .Book-info-div {
+    display: grid;
     height: 100%;
     background: rgb(14, 55, 116);
     overflow: auto;
     padding: 2px;
+    gap: 1vh;
+    align-content: start;
+    overflow-x: hidden;
 }
 
 .edit-book {
@@ -63,6 +67,7 @@
 span.ss-add,.ss-minus {
     font-weight: bolder;
     background: #13132b;
+    cursor: pointer;
 }
 
 span.ss-btn{
@@ -76,4 +81,39 @@ span.ss-btn{
 }
 span.ss-add:hover {
     background: #141452;
+}
+
+.read_online_btn{
+    background: blueviolet;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100%;
+    color:white;
+    display: block;
+    font-weight: 400;
+}
+
+
+.atcr{
+    background: grey;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100%;
+    color:white;
+    display: block; 
+    padding: 2px;
+}
+
+[book]{
+    border-radius: 3px;
+    cursor: grab;
+    height: 100%;
+}
+
+[book]:hover{
+    border: 2px rgb(142, 142, 223) solid;
+    transform: rotate3d(28, 6, -25, 4deg);
+    
 }

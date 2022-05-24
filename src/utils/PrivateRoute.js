@@ -28,7 +28,7 @@ import AuthContext from '../context/AuthContext'
 
 const PrivateRoute = ({children, ...rest}) => {
     let {user} = useContext(AuthContext)
-    console.log("Checking...")
+    // console.log("Checking...")
     return user ? <Outlet /> : <Navigate to="/login" />;
 // }
 }

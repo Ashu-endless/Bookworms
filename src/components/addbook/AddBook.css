@@ -32,7 +32,7 @@
   width: 100%;
   overflow: auto;
   padding-right: 2px;
-  max-height: 80vh;
+  /* max-height: 80vh; */
   overflow: auto;
   /* padding-top: 2vh; */
   /* padding-right: 1vw; */
@@ -47,7 +47,7 @@
   width: 100%;
   gap: 1vh;
   align-content: baseline;
-  max-height: 80vh;
+  /* max-height: 80vh; */
   overflow: auto;
 }
 
@@ -112,4 +112,13 @@
   display: grid;
   align-items: center;
   height: fit-content;
+}
+
+[icon=close-div]{
+  background-image: url(../../components/sideBar/close.svg);
+  position: absolute;
+  left: 1vw;
+  top: 1vh;
+  height: 25px;
+  z-index: 1;
 }

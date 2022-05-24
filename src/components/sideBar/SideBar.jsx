@@ -22,8 +22,9 @@ function SideBar() {
 
         <div id='Sidebar-Profilepic' icon="default-account" ></div>
         <div className='medboldp' >{user.username}</div>
-        <div className='btn-blue' >Edit Profile</div>
+        {/* <div className='btn-blue' >Edit Profile</div> */}
         <div className='btn-blue red_brder' onClick={logoutUser} >Logout</div>
+        <a href='https://ashu-endless.github.io/Endless-offical/#/' target={"_blank"} id='Endless-logo' rel="noreferrer" >Endless...</a>
     </div>
   );
 }

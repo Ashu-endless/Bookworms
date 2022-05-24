@@ -4,9 +4,7 @@ import React, {  useEffect,useContext } from 'react';
 import AuthContext from "../../context/AuthContext";
 import $ from "jquery";
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-// import { useNavigate } from 'react-router';
-
+import { Link } from "react-router-dom";
 export function textareaElemUI(){
   $('textarea').on('click', function(){
     $(this).height(1);
@@ -24,9 +22,8 @@ export function textareaElemUI(){
   $('textarea').click();
 }
 
-function AddBook() {
+function AddBook(props) {
   let {authTokens} = useContext(AuthContext)
-  // let navigate = useNavigate();
   const  AddBookApi = async(e)=>{
       e.preventDefault()
         let response = await fetch(`${api_url}api/addbook/`, {
@@ -42,21 +39,43 @@ function AddBook() {
               "about":e.target.about.value,
               "total_pages":e.target.total_pages.value,
               "pages_read":e.target.pages_read.value,
-              "cover_page_url":e.target.coverpage_url.value
+              "cover_page_url":e.target.coverpage_url.value,
+              "read_completed_times":e.target.read_completed_times.value,
+              "online_read_url":e.target.online_read_url.value,
+              "book_read_status":props.brs
+
             })
         })
         let data = await response.json()
-        console.log(data)
         if(data.success === 'true'){
           // window.location.href('/')
-          const MySwal = withReactContent(Swal)
+          // const MySwal = withReactContent(Swal)
     
-          await MySwal.fire({
-              title: <strong>Book Added to your Library</strong>,
-              // html: <i>Click Login Button to Login</i>,
-              icon: 'success',
-              confirmButtonText: <a href="/" className='boldwhitep'  > Great </a>
-            })
+          // await MySwal.fire({
+          //     title: <strong>Book Added to your Library</strong>,
+          //     // html: <i>Click Login Button to Login</i>,
+          //     icon: 'success',
+          //     confirmButtonText: <a href="/" className='boldwhitep'  > Great </a>
+          //   })
+          Swal.fire({
+            title: `Book Added to your ${props.where}`,
+            confirmButtonText: 'Great',
+            icon:'success',
+            
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "/Bookworms";
+    
+    
+            } 
+          })
+        }else{
+          Swal.fire({
+            title: 'Problem Adding Book',
+            confirmButtonText: 'ok',
+            icon:'error',
+            
+          })
         }
     }
      
@@ -128,6 +147,7 @@ function AddBook() {
 
     <>
       <form id="Addbook-div" onSubmit={AddBookApi}>
+        <Link to={'/'} icon="close-div" ></Link>
         <div id="AB-cover-fields" >
         <div id="AB-book-cover-preview" ></div>
         <label className="inp-text">Book Cover Image url</label>
@@ -144,10 +164,21 @@ function AddBook() {
             <textarea addbookinp="" type="text" name="about" placeholder="description" id="" />
             <label className="inp-text">Total Pages</label>
             <textarea addbookinp="" maxLength="500" type="number" name="total_pages" placeholder="total pages" id="" />
+            
             <label className="inp-text">Pages read</label>
             <textarea addbookinp="" type="number" name="pages_read" placeholder="pages read" id="" />
+            
+            <label className="inp-text">Completed Reading Time</label>
+            <textarea addbookinp="" type="number" name="read_completed_times" placeholder="Completed Reading Time" id="" />
+       
+            <label className="inp-text">Online Read Link</label>
+            <textarea addbookinp="" type="number" name="online_read_url" placeholder="Online Read Link(if available)" id="" />
+       
+       
+       
+       
         </div>
-      <button type="submit" id="AddBook-btn" >Add Book</button>
+      <button type="submit" id="AddBook-btn" >Add Book to {props.where}</button>
       </form>
     </>
   );

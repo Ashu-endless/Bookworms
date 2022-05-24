@@ -1,6 +1,7 @@
 #Greet-Div {
     position: relative;
     height: 20vh;
+    max-height: 150px;
     width: 96%;
     padding: 3%;
     margin: 2% 2%;

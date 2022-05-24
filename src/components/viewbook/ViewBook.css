@@ -1,33 +1,148 @@
+
 #ViewBook-div {
-    display: grid;
+    /* display: grid; */
     position: absolute;
     top: 4rem;
     width: 100%;
     /* margin: 0 5% 0 5%; */
     background: #080838;
-    min-height: calc(100vh - 4rem);
+    /* min-height: calc(100vh - 4rem); */
     z-index: 1;
-    border-radius: 5px;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    height: calc(100vh - 4rem);
+    overflow: hidden;
 }
 
-#DeleteBook-btn{
-        font-size: medium;
-        background: #df1a47;
-        border: none;
-        border-radius: 0.4rem;
-        color: white;
-        /* bottom: 1vh; */
-        width: 96%;
-        margin: 2%;
-        text-align: center;
-        /* font-weight: bold; */
-        /* padding: 1vh 1vw; */
-        cursor: pointer;
-        border: 2px #13132b solid;
-        /* grid-area: btn; */
-        /* height: 5vh; */
-        max-height: 50px;
-        font-family: monospace;
-        font-size: large;
+#DeleteBook-btn {
+    font-size: medium;
+    background: #df1a47;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 2px #13132b solid;
+    font-family: monospace;
+    font-size: large;
+    width: 100%;
+}
+
+#updateBook-btn {
+    font-size: large;
+    background: cornflowerblue;
+    border-radius: 0.4rem;
+    color: white;
+    text-align: center;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    border: 2px #080838 solid;
+    width: 100%;
+    font-family: monospace;
+}
+
+
+.nlrdr {
+    width: 100%;
+    height: fit-content;
+    color: cadetblue;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    /* justify-items: center; */
+    font-weight: bold;
+    color: cadetblue;
+
+}
+a.active {
+    color: white;
+}
+
+a.rdr {
+    /* height: 5vh; */
+    font-size: large;
+    display: block;
+    background: #04040a;
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+#Viewbook-details {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    padding: 0.5rem;
+    gap: 1vw;
+    max-height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#viewbook-btns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+    gap: 2vw;
+    padding: 1vw;
+    justify-items: center;
+    width: calc(100% - 0.5rem);
+}
+
+#Viewbook-notes {
+    padding: 0.5rem;
+    display: grid;
+    gap: 2vh;
+}
+
+[icon=bookmark-add]{
+    background-image: url(./images/bookmard-add.svg);
+    max-height: 50px;
+    height: 50px;
+}
+
+.bm-div {
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-columns: 25% 75%; */
+    grid-auto-columns: 20% 80%;
+    
+    font-size: medium;
+    height: fit-content;
+    gap: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    /* padding: 1vh 0vw 1vh 0vh; */
+    margin: 1vh 0vw;
+    font-weight: 600;
+}
+
+.bm-t {
+    padding: 1vh 0vw;
+    display: grid;
+    align-content: center;
+    word-break: break-all;
+}
+
+.bm-c {
+    padding: 1vh 0vw;
+    display: grid;
+    grid-auto-columns: calc(100% - 40px) 30px;
+    align-content: center;
+    word-break: break-word;
+    position: relative;
+    overflow-x: hidden;
+ position: relative;}
+
+
+[icon=edit-bookmark]{
+    background-image: url(./images/edit.svg);
+}
+[icon=delete-bookmark] {
+    background-image: url(./images/delete-bookmark.svg);
+    position: absolute;
+    right: 1vw;
+    top: 0;
+    border-left: 1px black solid;
+    height: 100%;
+    width: 30px;
 }

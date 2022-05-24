@@ -1,9 +1,9 @@
 import './Nav.css';
 import SearchBar from './searchbar/Searchbar'; 
 import { Link } from 'react-router-dom';
-import {Tooltip} from 'react-tippy';
+// import {Tooltip} from 'react-tippy';
 import 'react-tippy/dist/tippy.css'; 
-import ProfileMore from './userprofile/ProfileMore';
+// import ProfileMore from './userprofile/ProfileMore';
 import AuthContext from '../../context/AuthContext'
 import React, {useContext} from 'react'
 function Nav() {
@@ -11,9 +11,9 @@ function Nav() {
     let {logoutUser} = useContext(AuthContext)
     return (
         <nav>
-            <p className='bookworms-title' >BookWarms</p>
+            <Link to={'/'} className='bookworms-title' >BookWarms</Link>
             <div id='Navbar-rightside' >
-                <SearchBar/>
+                {/* <SearchBar/> */}
                 {/* <Tooltip html={<ProfileMore logout={logoutUser} />} interactive="true" position="bottom" trigger='click' > <div id='profile-svg' ></div> </Tooltip> */}
                 
                 {/* <div id='profile-svg' ></div> */}

@@ -9,6 +9,7 @@ body {
 }
 *{
   box-sizing: border-box;
+  word-break:break-all;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -49,7 +50,7 @@ textarea {
   min-height: 30px;
   line-height: 15px;
   /* min-width: 200px; */
-  max-width: 300px;
+  max-width: 100%;
   transition: width 0.25s;
   resize: none;
   overflow: hidden;
@@ -85,4 +86,8 @@ textarea {
 
 a{
   text-decoration: none;
+}
+
+.order-2 {
+  background-color: red!important;
 }

@@ -1,4 +1,4 @@
-#MyBooksDiv {
+[MyBooksDiv] {
     display: block;
     border: 3px #3f51b5 dashed;
     width: 96%;
@@ -25,7 +25,7 @@
     background-color: #2d1950;
 } */
 
-#MyBooksDiv-head {
+.MyBooksDiv-head {
     font-weight: bold;
     padding: 1vh 2vw;
     background: #141452;
@@ -33,8 +33,10 @@
     margin: 0;
 }
 
-#MyBooksDiv-body {
+#MyBooksDiv-body,
+[MyBooksDiv-body] {
     height: 50vh;
+    max-height: 370px;
     padding: 1vh 1vw;
     gap: 1vw;
     display: grid;
@@ -90,12 +92,51 @@ p.pp {
 }
 
 @media only screen and (max-width: 400px) {
-    #MyBooksDiv-body {
-        gap: 3vw;
-        
+    [BookContainer] {
+        gap: 4vw !important;     
     }
-    #MyBooksDiv-body::-webkit-scrollbar {
+    [mybooksdiv-body]::-webkit-scrollbar {
         height: 4px;
         width: 4px;
       }
   }
+@media only screen and (max-width: 700px) {
+    [MyBooksDiv]{
+        margin: 5% 2%;
+    }
+  }
+
+
+#My-current-reading-books-text{
+    align-content: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    min-width: 100px;
+    display: grid;
+}
+
+[BookContainer] {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1vw;
+    min-width: 90vw;
+    justify-content: start;
+}
+.colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+    color: aliceblue !important;
+  }
+
+.Addbookicon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    aspect-ratio: 1/1;
+    height: 100%;
+    fill: #000000;
+}
+
+.Addbookicon:hover{
+    fill: #8484e9;
+}
