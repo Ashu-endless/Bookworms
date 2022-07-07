@@ -293,7 +293,8 @@ function Book(props){
     labelColor="black"
     baseBgColor="#31d8dc"
     labelSize="15px"
-    customLabel={ (100*props.read_completed_times) + parseInt(pageread_progress/props.total_pages * 100) + "%"} 
+    // customLabel={ (100*props.read_completed_times) + parseInt(pageread_progress/props.total_pages * 100) + "%"} 
+    customLabel={ <span className="progcent" > {(100*props.read_completed_times) + parseInt(pageread_progress/props.total_pages * 100) + "%"}</span>} 
     animateOnRender
     maxCompleted={100}/>}
         </div>
