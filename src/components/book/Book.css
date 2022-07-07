@@ -112,8 +112,8 @@ span.ss-add:hover {
     height: 100%;
 }
 
-[book]:hover{
+/* [book]:hover{
     border: 2px rgb(142, 142, 223) solid;
     transform: rotate3d(28, 6, -25, 4deg);
     
-}
+} */

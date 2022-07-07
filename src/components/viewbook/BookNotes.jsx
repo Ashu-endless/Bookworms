@@ -17,7 +17,11 @@ function BookNotes(props) {
   if(props.fetchedData === ""){
     received_bookmarks_data = []
   }else{
-      received_bookmarks_data = JSON.parse(props.fetchedData.bookmarks)
+      if(props.fetchedData.bookmarks === ""){
+        received_bookmarks_data = []
+      }
+      else{
+      received_bookmarks_data = JSON.parse(props.fetchedData.bookmarks)}
 
   }
   const [bookmarksArr,setbookmarksArr] = useState(received_bookmarks_data)

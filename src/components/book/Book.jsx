@@ -287,10 +287,12 @@ function Book(props){
         <ProgressBar 
     completed={parseInt(pageread_progress/props.total_pages * 100)}
     bgColor="#ee41d6"
-    height="15px"
-    labelColor="white"
+    height="20px"
+    minheight="15px"
+    maxheight="15px"
+    labelColor="black"
     baseBgColor="#31d8dc"
-    labelSize="10px"
+    labelSize="15px"
     customLabel={ (100*props.read_completed_times) + parseInt(pageread_progress/props.total_pages * 100) + "%"} 
     animateOnRender
     maxCompleted={100}/>}
